@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(56, 50, 50);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+}
+.center-container{
+  height: 500px;
+  width: 350px;
+}
+.input_box{
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.box{
+  border: 1px solid rgb(240, 217, 217);
+  height: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+  color: aliceblue;
+  flex-wrap: wrap;
+}
+.trash{
+  margin-left: 14rem;
+  font-size: 23px;
+}
+.trash:hover{
+  color: red;
+}
+.list-item{
+  list-style-type: none;
+  /* background-color: #596e8b; */
+  border:2px solid rgb(161, 158, 158);
+  color:white;
+  padding:3px;
+  padding-left: 5px;
+  border-radius: 5px; 
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+.icons{
+  position: absolute;
+  right: 10px;
+}
+.icons i{
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;   
+}
+.icons i:hover{
+  transform: scale(1.2);  
+}
+.icon-delete:hover{
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.box_btn{
+  cursor: pointer;
+  transition: 1s;
+
+}
+.box_btn:hover{
+  background-color: rgb(88, 88, 182);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
